@@ -1,0 +1,15 @@
+[package]
+name = "plato-schema"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "JSON schema validation and versioning for PLATO messages"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+uuid = { version = "1", features = ["v4", "serde"] }
+
+[lib]
+name = "plato_schema"
+path = "src/lib.rs"
